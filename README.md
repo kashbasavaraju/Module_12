@@ -71,6 +71,6 @@ I would recommend the Regression Model with the oversampled dataset.
 
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-# If you do not recommend any of the models, please justify your reasoning.
+If you do not recommend any of the models, please justify your reasoning.
 
 I believe it would be better to predict the unhealthy loans than a model that would better predict the healthy loans. For the purposes of trying to identify credit risk, it would better to be oversample risky loans in order to create a model that is less likely to predict false positives for creditworthiness and therefore lowers risk for lenders. In the original data set, the model is more likely to return false positives with the original data set which is indicated by the lower precision score for high risk loans. The F1 score captures the likelihood of returning false positives and false negatives - the original dataset has a lower f1 score for high risk loans than the oversampled data as well.
